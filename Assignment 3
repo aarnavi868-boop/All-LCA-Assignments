@@ -1,1 +1,75 @@
-
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9bd66435-6d90-4d4b-bb22-891ac0ca25a3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Assignment 3: To check whetheror not the triangle is right angled or not using functions."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "46fd9f4b-0311-499f-9431-88976f02f29c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Accept input\n",
+    "s1 = float(input(\"Enter the first side: \"))\n",
+    "s2 = float(input(\"Enter the second slide: \"))\n",
+    "s3 = float(input(\"Enter the thirs side: \"))\n",
+    "\n",
+    "# define function\n",
+    "def checkTriangle(a, b, c):\n",
+    "    hypo = max(a,b,c)\n",
+    "    if hypo == a:\n",
+    "        if b**2 + c**2 == a**2:\n",
+    "            return True\n",
+    "        else:\n",
+    "            return False\n",
+    "\n",
+    "    elif hypo == b:\n",
+    "        if a**2 + c**2 == b**2:\n",
+    "            return True\n",
+    "        else:\n",
+    "            return False\n",
+    "\n",
+    "    elif hypo == c:\n",
+    "        if a**2 + b**2 == c**2:\n",
+    "            return True\n",
+    "        else:\n",
+    "            return False\n",
+    "\n",
+    "# call function\n",
+    "if checkTriangle(s1, s2, s3):\n",
+    "    print(\"The triangle is right angled\")\n",
+    "else:\n",
+    "    print(\"The triangle is not right angled\")"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python (notebook-env)",
+   "language": "python",
+   "name": "notebook-env"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.14.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
