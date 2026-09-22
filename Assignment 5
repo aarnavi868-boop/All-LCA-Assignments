@@ -1,1 +1,70 @@
-
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "92d55182-5b9e-406e-aed2-6278a5fe08b8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string:  jgd\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The string contains only allowed characters.\n"
+     ]
+    }
+   ],
+   "source": [
+    "string = input(\"Enter a string: \")\n",
+    "\n",
+    "valid = True\n",
+    "\n",
+    "for ch in string:\n",
+    "    if not (('a' <= ch <= 'z') or ('A' <= ch <= 'Z') or ('0' <= ch <= '9')):\n",
+    "        valid = False\n",
+    "        break\n",
+    "\n",
+    "if valid:\n",
+    "    print(\"The string contains only allowed characters.\")\n",
+    "else:\n",
+    "    print(\"The string contains invalid characters.\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "af74b81f-eb3f-4361-825c-9e83edc3d06b",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python (notebook-env)",
+   "language": "python",
+   "name": "notebook-env"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.14.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
